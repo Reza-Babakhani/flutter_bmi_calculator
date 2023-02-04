@@ -81,7 +81,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
     if (height != null && weight != null) {
       double heightInCm = (height / 100);
-      print("changed-------------------------------");
       setState(() {
         _bmiValue = weight / (heightInCm * heightInCm);
       });
